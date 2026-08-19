@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 :root {
-  /* Warna utama terinspirasi dari gambar referensi Anda */
-  --bg-dark: #0d1b2a;       /* Biru malam yang sangat pekat untuk background utama */
-  --bg-medium: #1b263b;     /* Biru malam yang sedikit lebih terang untuk kartu/seksi */
-  --text-main: #a8b2d1;     /* Warna teks utama yang lembut (light slate) */
-  --text-heading: #e0e6f1;  /* Warna teks judul yang lebih terang */
-  --accent: #57cbcc;         /* Warna cyan yang elegan sebagai aksen utama */
-  --border-color: #415a77;  /* Warna border yang subtil */
+  /* Warna utama terinspirasi dari gaya minimalis terang */
+  --bg-dark: #FDFBF7;       /* Off-white / Krem bersih untuk background utama */
+  --bg-medium: #F3F0EB;     /* Off-white yang sedikit lebih gelap untuk kartu/seksi */
+  --text-main: #334155;     /* Slate-700, warna teks sekunder yang nyaman dibaca */
+  --text-heading: #0F172A;  /* Midnight Blue pekat (Hampir Hitam) untuk judul/heading */
+  --accent: #10B981;         /* Hijau Fresh / Spring Green sebagai aksen utama */
+  --border-color: #E2E8F0;  /* Warna border abu-abu muda yang subtil */
 }
 
 body {

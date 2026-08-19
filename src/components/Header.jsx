@@ -24,8 +24,8 @@ const Header = ({ onNavigate, currentPage }) => {
                 <nav className="container mx-auto flex justify-between items-center">
                     {/* --- PERUBAHAN DI SINI --- */}
                     <button onClick={() => handleNavClick('home')} className="flex items-center gap-3 text-2xl font-bold text-accent">
-                        <img src="/logo.svg" alt="biiak.sbs logo" className="h-12 w-12" />
-                        <span>biiak.sbs</span>
+                        <img src="/baiik.svg" alt="baiik.sbs logo" className="h-12 w-12" />
+                        <span>baiik.sbs</span>
                     </button>
                     {/* --- AKHIR PERUBAHAN --- */}
                     

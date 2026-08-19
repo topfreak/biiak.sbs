@@ -8,7 +8,7 @@ const Tentang = () => (
             
             <div className="bg-medium p-8 rounded-xl border border-subtle mb-12">
                 <div className="flex flex-col md:flex-row items-center gap-8">
-                     <img src="./topik.png" alt="Taufiq Hidayatullah" className="rounded-full w-32 h-32 md:w-40 md:h-40 object-cover flex-shrink-0 border-4 border-subtle" />
+                     <img src="/topik.jpg" alt="Taufiq Hidayatullah" className="rounded-full w-32 h-32 md:w-40 md:h-40 object-cover flex-shrink-0 border-4 border-subtle" />
                     <div>
                         <h2 className="text-3xl font-bold text-heading">Taufiq Hidayatullah, S.Kom.</h2>
                         <p className="text-accent font-semibold text-lg mb-2">Informatics Graduate</p>

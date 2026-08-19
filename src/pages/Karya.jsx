@@ -8,7 +8,7 @@ const Karya = () => {
             name: "SPRCP",
             category: "Internet of Things & Distributed Database",
             description: "Rancang bangun sistem monitoring korosi beton pada metode Smart Patch Repair Cathodic Protection (SPRCP) berbasis Internet of Things dan Distributed Real-Time Database untuk pemantauan struktural secara berkala dan akurat.",
-            image: "https://placehold.co/600x400/1b263b/57cbcc?text=SPRCP+IoT+System",
+            image: "https://placehold.co/600x400/10B981/FFFFFF?text=SPRCP+IoT+System",
             githubLink: "https://github.com/topfreak/Project-Kolaborasi-Uji-Korosi-Beton-Menggunakan-IoT",
             technologies: ["IoT", "FastAPI", "Distributed Database", "Real-Time Data"]
         },
@@ -18,7 +18,7 @@ const Karya = () => {
             category: "Frontend Development",
             description: "Aplikasi web progresif (PWA) untuk berbagi cerita dengan lokasi menggunakan teknologi modern. Aplikasi ini memungkinkan pengguna untuk membuat, melihat, dan menyimpan cerita dengan foto dan lokasi geografis.",
             image: "./storyshare.png",
-            projectLink: "https://frontend-intermediate.biiak.sbs/",
+            projectLink: "https://frontend-intermediate.baiik.sbs/",
             githubLink: "https://github.com/topfreak/frontend-intermediate.git",
             technologies: ["JavaScript", "Webpack", "Leaflet", "MapTiler API", "Workbox"]
         },
@@ -28,7 +28,7 @@ const Karya = () => {
             category: "Frontend Development",
             description: "Deep Retina adalah platform kesehatan digital yang berfokus pada deteksi dini penyakit mata melalui teknologi kecerdasan buatan (AI) dan machine learning. Aplikasi web ini memungkinkan pengguna untuk mengunggah foto retina mata dan mendapatkan analisis otomatis untuk mendeteksi retinopati diabetik.",
             image: "./deepretina_fe.png",
-            projectLink: "https://deep-retina.biiak.sbs/",
+            projectLink: "https://deep-retina.baiik.sbs/",
             githubLink: "https://github.com/topfreak/DeepRetina_FE.git",
             technologies: ["JavaScript", "Webpack", "Babel", "PWA", "MVP"]
         },
@@ -37,7 +37,7 @@ const Karya = () => {
             name: "DeepRetina (Backend)",
             category: "Backend Development",
             description: "Backend REST API untuk sistem deteksi retinopati diabetik menggunakan deep learning. Aplikasi ini dibangun dengan FastAPI dan menggunakan model ensemble DenseNet121 + EfficientNetB0 untuk klasifikasi tingkat keparahan retinopati dari citra retina.",
-            image: "https://placehold.co/600x400/1b263b/57cbcc?text=DeepRetina+(Backend)",
+            image: "https://placehold.co/600x400/10B981/FFFFFF?text=DeepRetina+(Backend)",
             githubLink: "https://github.com/topfreak/DeepRetina_BE.git",
             technologies: ["FastAPI", "SQLite", "TensorFlow/Keras", "Uvicorn ASGI"]
         },
@@ -56,7 +56,7 @@ const Karya = () => {
             name: "Bookshelf API",
             category: "Backend Development",
             description: "RESTful API sederhana untuk mengelola koleksi buku menggunakan Hapi.js framework. API ini dibuat sebagai submission untuk kelas Belajar Back-End Pemula dengan JavaScript.",
-            image: "https://placehold.co/600x400/1b263b/57cbcc?text=Bookshelf+API",
+            image: "https://placehold.co/600x400/10B981/FFFFFF?text=Bookshelf+API",
             githubLink: "https://github.com/topfreak/Bookshelf-API.git",
             technologies: ["Node.js", "Hapi.js", "nanoid", "JavaScript"]
         },
@@ -65,7 +65,7 @@ const Karya = () => {
             name: "To-Do List App",
             category: "Fullstack Development",
             description: "Todo App adalah aplikasi web modern yang memungkinkan Anda mengelola tugas harian dengan mudah dan efisien, langsung dari browser Anda. Tambahkan task baru, tandai sebagai selesai, edit atau hapus tugas, dan pantau progres Anda dalam satu interface yang clean dan responsif!",
-            image: "https://placehold.co/600x400/1b263b/57cbcc?text=To-Do+List+App",
+            image: "https://placehold.co/600x400/10B981/FFFFFF?text=To-Do+List+App",
             githubLink: "https://github.com/topfreak/ToDoApp-Fullstack.git",
             technologies: ["Laravel", "RESTful API", "MySQL", "React", "Vite"]
         }
