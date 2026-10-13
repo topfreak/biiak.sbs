@@ -173,7 +173,7 @@ const Home = ({ onNavigate }) => {
                             <p className="text-main text-xs md:text-sm font-semibold">Proyek Aplikasi & IoT</p>
                         </div>
                         <div>
-                            <p className="text-3xl md:text-4xl font-black text-accent mb-1">10+</p>
+                            <p className="text-3xl md:text-4xl font-black text-accent mb-1">17</p>
                             <p className="text-main text-xs md:text-sm font-semibold">Sertifikasi Kompetensi</p>
                         </div>
                     </div>
