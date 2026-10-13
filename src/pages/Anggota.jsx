@@ -5,8 +5,8 @@ const Anggota = () => {
         {
             nama: "Taufiq Hidayatullah, S.Kom.",
             peran: "Informatics Graduate & Master Student",
-            subdomain: "topik.biiak.sbs",
-            url: "https://topik.biiak.sbs",
+            subdomain: "topikbiiaksbs.vercel.app",
+            url: "https://topikbiiaksbs.vercel.app/",
             deskripsi: "Mengeksplorasi pengembangan sistem dan analitik prediktif berbasis Big Data untuk solusi teknologi yang cerdas dan berdampak.",
             foto: "/pp.jpg"
         }
