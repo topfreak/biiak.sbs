@@ -25,7 +25,7 @@ const Header = ({ onNavigate, currentPage }) => {
                     {/* --- PERUBAHAN DI SINI --- */}
                     <button onClick={() => handleNavClick('home')} className="flex items-center gap-3 text-2xl font-bold text-accent">
                         <img src="/baiik.svg" alt="topik.biiak.sbs logo" className="h-12 w-12" />
-                        <span>topik.biiak.sbs</span>
+                        <span>topik</span>
                     </button>
                     {/* --- AKHIR PERUBAHAN --- */}
                     
