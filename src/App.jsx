@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import Karya from './pages/Karya';
+import Anggota from './pages/Anggota';
 import Tentang from './pages/Tentang';
 import Kontak from './pages/Kontak';
 
@@ -13,15 +13,15 @@ function App() {
 
     const renderPage = () => {
         switch (currentPage) {
-            case 'karya':
-                return <Karya />;
+            case 'anggota':
+                return <Anggota />;
             case 'tentang':
-                return <Tentang />;
+                return <Tentang onNavigate={setCurrentPage} />;
             case 'kontak':
                 return <Kontak />;
             case 'home':
             default:
-                return <Home />;
+                return <Home onNavigate={setCurrentPage} />;
         }
     };
 
