@@ -3,9 +3,15 @@ import React from 'react';
 const Home = ({ onNavigate }) => {
     const featuredProjects = [
         {
-            title: "SPRCP (IoT System)",
+            title: "ARCIS: Cyber-Physical IoT",
+            category: "Publikasi Ilmiah IEEE",
+            desc: "Arsitektur Cyber-Physical IoT 4-lapisan terintegrasi untuk monitoring elektrokimia proteksi katodik beton bertulang (SPRCP).",
+            tech: ["IEEE Xplore", "FreeRTOS", "Cyber-Physical"]
+        },
+        {
+            title: "SPRCP (IoT System & Skripsi)",
             category: "IoT & Distributed DB",
-            desc: "Monitoring korosi beton berbasis IoT dan database terdistribusi real-time untuk keandalan struktural.",
+            desc: "Monitoring korosi beton berbasis IoT dan database terdistribusi real-time untuk keandalan struktural tanpa bias IR Drop.",
             tech: ["IoT", "FastAPI", "Real-Time Data"]
         },
         {
@@ -13,12 +19,6 @@ const Home = ({ onNavigate }) => {
             category: "Healthcare AI Platform",
             desc: "Platform deteksi dini retinopati diabetik menggunakan deep learning ensemble DenseNet121 + EfficientNetB0.",
             tech: ["React", "FastAPI", "Deep Learning"]
-        },
-        {
-            title: "SnapLah",
-            category: "Interactive Web App",
-            desc: "Aplikasi kreatif photostrip studio foto langsung di browser dengan timer dan kustomisasi frame.",
-            tech: ["React", "Vite", "Tailwind CSS"]
         }
     ];
 
@@ -169,8 +169,8 @@ const Home = ({ onNavigate }) => {
                             <p className="text-main text-xs sm:text-sm font-semibold">Master Student</p>
                         </div>
                         <div className="p-2">
-                            <p className="text-2xl sm:text-3xl md:text-4xl font-black text-accent mb-1">7+</p>
-                            <p className="text-main text-xs sm:text-sm font-semibold">Proyek Aplikasi & IoT</p>
+                            <p className="text-2xl sm:text-3xl md:text-4xl font-black text-accent mb-1">9+</p>
+                            <p className="text-main text-xs sm:text-sm font-semibold">Karya, Riset & IoT</p>
                         </div>
                         <div className="p-2">
                             <p className="text-2xl sm:text-3xl md:text-4xl font-black text-accent mb-1">17</p>
@@ -194,7 +194,7 @@ const Home = ({ onNavigate }) => {
                             onClick={() => onNavigate && onNavigate('karya')}
                             className="text-accent font-bold hover:underline inline-flex items-center gap-1.5 text-sm sm:text-base"
                         >
-                            <span>Lihat Semua Proyek (7)</span>
+                            <span>Lihat Semua Karya & Riset (9)</span>
                             <span>&rarr;</span>
                         </button>
                     </div>

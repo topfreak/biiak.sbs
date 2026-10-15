@@ -82,7 +82,7 @@ const Tentang = () => {
                                 <p className="font-bold text-accent text-xs sm:text-sm">Sep 2022 - Mei 2026</p>
                                 <h4 className="text-lg sm:text-xl font-semibold text-heading">Sarjana Informatika, Universitas AMIKOM Yogyakarta</h4>
                                 <p className="text-main text-xs sm:text-sm mt-1 leading-relaxed">
-                                    Lulus dengan predikat Cum Laude (IPK 3.78/4.00) per 20 Mei 2026. Fokus studi dan mata kuliah relevan: Pengembangan Web Full-Stack, Analisis Data, dan Jaringan Komputer.
+                                    Lulus dengan predikat Cum Laude (IPK 3.78/4.00) per 20 Mei 2026 melalui Jalur Non Reguler Magang Tridharma. Menghasilkan Tugas Akhir sistem monitoring korosi beton SPRCP berbasis IoT & distributed database, serta publikasi ilmiah internasional terindeks IEEE (ICITCOM 2026).
                                 </p>
                             </div>
                             <div className="border-t border-subtle"></div>

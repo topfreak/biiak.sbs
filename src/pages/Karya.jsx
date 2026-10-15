@@ -6,6 +6,46 @@ const Karya = () => {
     const projects = [
         {
             id: 1,
+            name: "ARCIS: Cyber-Physical IoT Architecture",
+            category: "Publikasi & Riset",
+            categories: ["Publikasi & Riset", "IoT & Data"],
+            badge: "IEEE Publication · ICITCOM 2026",
+            description: "Publikasi ilmiah IEEE (ICITCOM 2026) yang memformulasikan arsitektur Cyber-Physical IoT 4-lapisan (ARCIS) untuk monitoring korosi elektrokimia pada proteksi katodik beton bertulang (SPRCP). Mengintegrasikan akuisisi termultipleks 32 titik ukur, kontrol edge dual-core ESP32 FreeRTOS, state cloud Firebase event-driven 6-node, dan visualisasi analitik browser secara real-time dengan konsistensi state dan pemulihan watchdog otonom.",
+            projectLink: "https://doi.org/10.1109/ICITCOM70739.2026.11714349",
+            projectLinkText: "IEEE Xplore (DOI) →",
+            githubLink: "https://ieeexplore.ieee.org/xpl/conhome/11714322/proceeding",
+            githubLinkText: "ICITCOM Proceeding",
+            technologies: ["IEEE Xplore", "Cyber-Physical Systems", "ESP32 FreeRTOS", "16-bit ADC", "Firebase Realtime DB"],
+            gradient: "from-blue-600/25 to-indigo-600/10",
+            icon: (
+                <svg className="w-8 h-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+            )
+        },
+        {
+            id: 2,
+            name: "Monitoring Korosi Beton SPRCP (Tugas Akhir S1)",
+            category: "Publikasi & Riset",
+            categories: ["Publikasi & Riset", "IoT & Data"],
+            badge: "Skripsi S1 · E-Prints AMIKOM",
+            description: "Tugas Akhir Sarjana Informatika (Jalur Non Reguler Magang Tridharma) yang merancang bangun sistem akuisisi digital IoT berbasis Cyber-Physical Systems (CPS) dengan ESP32 Dual-Core dan ADC 16-bit ADS1115 untuk monitoring proteksi korosi beton SPRCP. Berhasil mengotomatisasi pemutusan arus Instant-Off orde milidetik presisi guna mengeliminasi distorsi resistansi ohmik (IR Drop), serta sinkronisasi data real-time NoSQL Firebase menuju Web Dashboard React.js SPA.",
+            projectLink: "https://eprints.amikom.ac.id/id/eprint/33000/",
+            projectLinkText: "E-Prints AMIKOM →",
+            githubLink: "https://eprints.amikom.ac.id/id/eprint/33000/1/COVER.pdf",
+            githubLinkText: "Unduh Cover & Dokumen",
+            technologies: ["IoT CPS", "ESP32 Dual-Core", "ADS1115", "Firebase NoSQL", "React.js SPA", "E-Prints"],
+            gradient: "from-cyan-500/20 to-teal-500/10",
+            icon: (
+                <svg className="w-8 h-8 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 14l9-5-9-5-9 5 9 5z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                </svg>
+            )
+        },
+        {
+            id: 3,
             name: "SPRCP (IoT System)",
             category: "IoT & Data",
             badge: "IoT & Distributed DB",
@@ -21,7 +61,7 @@ const Karya = () => {
             )
         },
         {
-            id: 2,
+            id: 4,
             name: "Story Share",
             category: "Frontend",
             badge: "Progressive Web App",
@@ -38,7 +78,7 @@ const Karya = () => {
             )
         },
         {
-            id: 3,
+            id: 5,
             name: "DeepRetina (Frontend)",
             category: "Frontend",
             badge: "AI Health Platform",
@@ -55,7 +95,7 @@ const Karya = () => {
             )
         },
         {
-            id: 4,
+            id: 6,
             name: "DeepRetina (Backend API)",
             category: "Backend",
             badge: "Deep Learning API",
@@ -70,7 +110,7 @@ const Karya = () => {
             )
         },
         {
-            id: 5,
+            id: 7,
             name: "SnapLah",
             category: "Frontend",
             badge: "Photostrip Web App",
@@ -87,7 +127,7 @@ const Karya = () => {
             )
         },
         {
-            id: 6,
+            id: 8,
             name: "Bookshelf REST API",
             category: "Backend",
             badge: "Backend Service",
@@ -102,7 +142,7 @@ const Karya = () => {
             )
         },
         {
-            id: 7,
+            id: 9,
             name: "To-Do List App",
             category: "Fullstack",
             badge: "Fullstack System",
@@ -118,21 +158,21 @@ const Karya = () => {
         }
     ];
 
-    const categories = ['All', 'Frontend', 'Backend', 'Fullstack', 'IoT & Data'];
+    const categories = ['All', 'Publikasi & Riset', 'IoT & Data', 'Frontend', 'Backend', 'Fullstack'];
 
     const filteredProjects = selectedCategory === 'All' 
         ? projects 
-        : projects.filter(p => p.category === selectedCategory);
+        : projects.filter(p => p.category === selectedCategory || (p.categories && p.categories.includes(selectedCategory)));
 
     return (
         <div className="bg-dark pt-24 sm:pt-28 md:pt-36 pb-16 md:pb-32 min-h-screen">
             <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
                 <div className="text-center mb-8 sm:mb-12">
                     <h1 className="text-3xl sm:text-5xl md:text-6xl font-black mb-3 sm:mb-4 text-heading">
-                        Karya & <span className="gradient-text-accent">Proyek</span>
+                        Karya & <span className="gradient-text-accent">Publikasi</span>
                     </h1>
                     <p className="text-main text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-                        Koleksi proyek pilihan yang mencakup pengembangan web full-stack, analitik data, sistem IoT, dan implementasi kecerdasan buatan.
+                        Koleksi publikasi ilmiah internasional, riset Cyber-Physical Systems & IoT, serta pengembangan aplikasi perangkat lunak modern.
                     </p>
                 </div>
 
@@ -203,7 +243,7 @@ const Karya = () => {
                                                 rel="noopener noreferrer"
                                                 className="flex-1 bg-accent text-bg-dark text-center py-2.5 px-4 rounded-lg font-bold text-xs sm:text-sm hover:bg-opacity-90 transition-all-smooth shadow-sm"
                                             >
-                                                Demo Web &rarr;
+                                                {project.projectLinkText || "Demo Web →"}
                                             </a>
                                         )}
                                         {project.githubLink && (
@@ -213,7 +253,7 @@ const Karya = () => {
                                                 rel="noopener noreferrer"
                                                 className={`${project.projectLink ? 'flex-1' : 'w-full'} bg-dark border border-subtle text-heading text-center py-2.5 px-4 rounded-lg font-semibold text-xs sm:text-sm hover:border-accent hover:text-accent transition-all-smooth`}
                                             >
-                                                GitHub Code
+                                                {project.githubLinkText || "GitHub Code"}
                                             </a>
                                         )}
                                     </div>
