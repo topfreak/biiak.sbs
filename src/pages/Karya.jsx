@@ -124,24 +124,24 @@ const Karya = () => {
         : projects.filter(p => p.category === selectedCategory);
 
     return (
-        <div className="bg-dark pt-32 pb-20 md:pb-32 min-h-screen">
-            <div className="container mx-auto px-6 max-w-6xl">
-                <div className="text-center mb-12">
-                    <h1 className="text-4xl md:text-6xl font-black mb-4 text-heading">
+        <div className="bg-dark pt-24 sm:pt-28 md:pt-36 pb-16 md:pb-32 min-h-screen">
+            <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
+                <div className="text-center mb-8 sm:mb-12">
+                    <h1 className="text-3xl sm:text-5xl md:text-6xl font-black mb-3 sm:mb-4 text-heading">
                         Karya & <span className="gradient-text-accent">Proyek</span>
                     </h1>
-                    <p className="text-main text-lg max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-main text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
                         Koleksi proyek pilihan yang mencakup pengembangan web full-stack, analitik data, sistem IoT, dan implementasi kecerdasan buatan.
                     </p>
                 </div>
 
                 {/* Filter Kategori */}
-                <div className="flex flex-wrap justify-center gap-3 mb-12">
+                <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 sm:mb-12">
                     {categories.map((cat) => (
                         <button
                             key={cat}
                             onClick={() => setSelectedCategory(cat)}
-                            className={`px-5 py-2 rounded-full font-semibold text-sm transition-all-smooth ${
+                            className={`px-4 sm:px-5 py-1.5 sm:py-2 rounded-full font-semibold text-xs sm:text-sm transition-all-smooth ${
                                 selectedCategory === cat
                                     ? 'bg-accent text-bg-dark shadow-md shadow-cyan-500/20'
                                     : 'bg-medium text-main border border-subtle hover:border-accent hover:text-accent'
@@ -153,40 +153,40 @@ const Karya = () => {
                 </div>
                 
                 {/* Grid Proyek */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                     {filteredProjects.map((project) => (
                         <div 
                             key={project.id} 
                             className="bg-medium rounded-2xl overflow-hidden flex flex-col border border-subtle hover:border-accent transition-all-smooth transform hover:-translate-y-1.5 shadow-xl group"
                         >
                             {/* Card Visual Header */}
-                            <div className={`p-6 bg-gradient-to-br ${project.gradient} border-b border-subtle flex items-center justify-between`}>
-                                <div className="p-3 bg-dark/60 backdrop-blur-sm rounded-xl border border-subtle">
+                            <div className={`p-5 sm:p-6 bg-gradient-to-br ${project.gradient} border-b border-subtle flex items-center justify-between`}>
+                                <div className="p-2.5 sm:p-3 bg-dark/60 backdrop-blur-sm rounded-xl border border-subtle">
                                     {project.icon}
                                 </div>
-                                <span className="text-xs font-bold uppercase tracking-wider text-accent bg-dark/70 px-3 py-1.5 rounded-full border border-accent/20">
+                                <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-accent bg-dark/70 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full border border-accent/20">
                                     {project.badge}
                                 </span>
                             </div>
 
                             {/* Card Content */}
-                            <div className="p-6 md:p-8 flex-1 flex flex-col justify-between">
+                            <div className="p-5 sm:p-6 md:p-8 flex-1 flex flex-col justify-between">
                                 <div>
-                                    <h3 className="text-2xl font-bold mb-3 text-heading group-hover:text-accent transition-colors">
+                                    <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-heading group-hover:text-accent transition-colors">
                                         {project.name}
                                     </h3>
-                                    <p className="text-main mb-6 text-sm leading-relaxed">
+                                    <p className="text-main mb-5 sm:mb-6 text-sm leading-relaxed">
                                         {project.description}
                                     </p>
                                 </div>
                                 
                                 <div>
                                     {/* Tech Tags */}
-                                    <div className="flex flex-wrap gap-2 mb-6">
+                                    <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-5 sm:mb-6">
                                         {project.technologies.map((tech, idx) => (
                                             <span 
                                                 key={idx}
-                                                className="text-xs bg-dark px-2.5 py-1 rounded-md text-main border border-subtle font-mono"
+                                                className="text-[11px] sm:text-xs bg-dark px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md text-main border border-subtle font-mono"
                                             >
                                                 {tech}
                                             </span>
@@ -194,13 +194,13 @@ const Karya = () => {
                                     </div>
                                     
                                     {/* Action Links */}
-                                    <div className="flex gap-3 pt-4 border-t border-subtle">
+                                    <div className="flex flex-col sm:flex-row gap-2.5 sm:gap-3 pt-4 border-t border-subtle">
                                         {project.projectLink && (
                                             <a 
                                                 href={project.projectLink}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="flex-1 bg-accent text-bg-dark text-center py-2.5 px-4 rounded-lg font-bold text-sm hover:bg-opacity-90 transition-all-smooth shadow-sm"
+                                                className="flex-1 bg-accent text-bg-dark text-center py-2.5 px-4 rounded-lg font-bold text-xs sm:text-sm hover:bg-opacity-90 transition-all-smooth shadow-sm"
                                             >
                                                 Demo Web &rarr;
                                             </a>
@@ -210,7 +210,7 @@ const Karya = () => {
                                                 href={project.githubLink}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className={`${project.projectLink ? 'flex-1' : 'w-full'} bg-dark border border-subtle text-heading text-center py-2.5 px-4 rounded-lg font-semibold text-sm hover:border-accent hover:text-accent transition-all-smooth`}
+                                                className={`${project.projectLink ? 'flex-1' : 'w-full'} bg-dark border border-subtle text-heading text-center py-2.5 px-4 rounded-lg font-semibold text-xs sm:text-sm hover:border-accent hover:text-accent transition-all-smooth`}
                                             >
                                                 GitHub Code
                                             </a>
